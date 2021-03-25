@@ -45,3 +45,40 @@ header>.header-content{
     float: right;
     padding: 0 6px;
 }
+/* ----------------------------------banner样式 */
+nav{
+    background: url('../img/banner-bg.jpg') no-repeat;
+}
+.banner-outer{
+    width: 1190px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+.banner-logo{
+    width: 80px;
+    height: 80px;
+    padding: 10px 5px 10px 5px;
+    float: left;
+}
+.banner-link{
+    width: 1085px;
+    padding:13px 0 9px 10px;
+    position: absolute;
+    left: 90px;
+
+}
+.banner-link>a{/* a标签是一个行内样式吗？,实现块元素的垂直居中 ,给a标签设置了inline-block之后，a标签之间的距离逐渐变大为甚？*/
+    width: 209px;
+    height: 75px;
+    background-repeat: no-repeat;
+    display: block;
+    float: left;
+    margin-right: 8px;
+}
+/* ------------------------main样式 */
+main{
+    width: 1190px;
+    margin:0 auto;
+    background: white;
+}
