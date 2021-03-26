@@ -5,7 +5,7 @@ html,body,ul,li{
     list-style: none;
 }
 .background{
-
+    position: relative;
 }
 header{
     width: 100%;
@@ -76,9 +76,59 @@ nav{
     float: left;
     margin-right: 8px;
 }
+/* ------------背景 */
+.side-l-bg{
+    background: url('../img/side-l-bg.png') no-repeat;
+    position: absolute;
+    z-index: -1;
+    width: 360px;
+    height: 800px;
+    float: left;
+}
+.side-r-bg{
+    background: url('../img/side-r-bg.png') no-repeat;
+    width: 360px;
+    height: 800px;
+    position:absolute;
+    right: 0;
+    z-index: -1;
+    float: right;/* 浮动和定位：需要总结！！ */
+}
 /* ------------------------main样式 */
-main{
+main{/* main被左右的浮动的背景遮住:解决：将.background设置position为relative，将两个背景设置为absolute */
     width: 1190px;
     margin:0 auto;
     background: white;
+}
+.search-bar{
+   /*  position: relative; */
+   overflow: hidden;/* BFC */
+   padding-top: 15px;
+}
+/* .search-bar::after{
+    content: "";
+    display: block;
+    clear: both;
+} */
+.search-bar>.gif-a{
+    float: left;
+    width: 80px;
+    height: 80px;
+}
+.search{
+   /*  position: absolute;
+    top: 0;
+    left: 120px; */
+    margin-left: 218px;
+    margin-right: 145px;
+    margin-top: 30px;
+}
+.search-section:after{/* 清除li浮动导致的高度塌陷 ,zoom是什么*/
+    content: "";
+    display: block;
+    clear: both;
+
+}
+.search-section>li{
+    float: left;
 }
