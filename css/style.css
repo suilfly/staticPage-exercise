@@ -2,7 +2,7 @@ html,
 body,
 ul,
 li,
-input {
+input,h2 {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -11,6 +11,9 @@ body,
 input,
 button {
   font: 12px/1.5 tahoma, arial, "Hiragino Sans GB", "\5b8b\4f53", sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+  font-size: 100%;
 }
 .background {
   position: relative;
@@ -112,7 +115,8 @@ main {
 }
 .search-bar {
   /*  position: relative; */
-  /*  overflow: hidden; */ /* BFC */
+   overflow: hidden; /* BFC */
+   height: 150px;
   padding-top: 15px;
 }
 .search-bar::after {
@@ -213,4 +217,28 @@ main {
     height: 100%;
     font-size: 18px;
     font-weight: 800;
+}
+/* ---------------------------------title-List */
+.title-bar{
+  position: relative;
+}
+.inner-title-bar{
+  overflow: hidden;
+  height: 30px;
+  background-image: linear-gradient(to right, #ff9000, #ff5000);
+  line-height: 30px;
+}
+.main-title{
+  float: left;
+}
+.title-list{
+  float: left;
+}
+.title-list>li{
+  float: left;
+}
+.title-list:after{
+content: "";
+display: block;
+clear: both;
 }
