@@ -2,10 +2,12 @@ html,
 body,
 ul,
 li,
-input,h2 {
+input,h2,a{
   margin: 0;
   padding: 0;
   list-style: none;
+  text-decoration: none;
+  
 }
 body,
 input,
@@ -227,18 +229,50 @@ main {
   height: 30px;
   background-image: linear-gradient(to right, #ff9000, #ff5000);
   line-height: 30px;
+  color: white;
+  font-size: 16px;
 }
 .main-title{
   float: left;
+  width: 190px;
+  text-align: center;
+  background: #ff5000;
 }
 .title-list{
   float: left;
 }
 .title-list>li{
   float: left;
+  font-weight: 700;
+  margin: 0 3px;
+  padding: 0 3px;
+}
+.title-list>li:last-child{
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0 7px;
 }
 .title-list:after{
 content: "";
 display: block;
 clear: both;
+}
+/* ---------------main-info */
+.main-info::after{
+content: "";
+display: block;
+clear: both;
+}
+.main-info-f{
+  float: left;
+}
+.theme-list>div{
+  width: 189px;
+  border-right: 1px solid #ff5000;
+  border-left:1px solid #ff5000 ;
+  text-align: center;
+  font-size: 14px;
+}
+.t-inner-list a{
+  color: #333;
 }
