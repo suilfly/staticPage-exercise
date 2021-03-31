@@ -258,6 +258,9 @@ display: block;
 clear: both;
 }
 /* ---------------main-info */
+.main-info{
+  background: #f4f4f4;
+}
 .main-info::after{
 content: "";
 display: block;
@@ -270,9 +273,40 @@ clear: both;
   width: 189px;
   border-right: 1px solid #ff5000;
   border-left:1px solid #ff5000 ;
+  border-bottom:1px solid #ff5000 ;
   text-align: center;
   font-size: 14px;
 }
+.t-inner-list{
+  background: white;
+}
 .t-inner-list a{
   color: #333;
+}
+.display-block{
+  width: 700px;
+}
+/* ---------------------------轮播 */
+.cal-1{
+  width: 520px;
+  height: 280px;
+  padding: 10px;
+  float: left;
+}
+.cal-container{
+  overflow: hidden;
+}
+.side-img{
+  float: right;
+  padding: 10px 0;
+}
+/* ------------user-info */
+.user-info-container{
+  margin-left: 9px;
+  margin-top: 10px;
+  width: 290px;
+  height: 150px;
+  background: url('../img/user-bg-1.png');
+  background-size: 290px 145px;
+  background-repeat: no-repeat;
 }
